@@ -9,11 +9,11 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
-          <img src="logo.svg" width="300" height="200" alt="Логотип">
+        <a class="main-header-logo"><!--заглушка-->
+          <img src="img/logo.jpg" width="300" height="200" alt="Логотип города Седона">
         </a>
-        <ul class="navigation-list">
-          <li>Информация</li>
+        <ul class="site-navigation-list">
+          <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="#">Гостиницы</a></li>
@@ -23,38 +23,37 @@
 
 <!--Main content-->
 
-    <main>
+    <main class="container">
       <section class="greeting-block">
-        <h1>Добро пожаловать в Седону</h1>
-        <img class="greeting-title" src="welcome.jpg" width="300" height="400" alt="Welcome to the gorgeous Sedona. Because the Grand  Canyon sucks!">
+        <h1 class="page-title visually-hidden" >Добро пожаловать в Седону</h1>
+        <img class="greeting-title" src="img/welcome.jpg" width="300" height="400" alt="Welcome to the gorgeous Sedona. Because the Grand  Canyon sucks!">
         <div class="background-mask"></div>
       </section>
       
       <section class="features-block">
-        <h2>Преимущества Седоны</h2>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p class="features-description-title">Седона — небольшой городок в Аризоне,  заслуживающий большего!</p>
         <p class="features-description-info">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="features-list">
           <li class="features-item">
-
             <h3 class="living-title">Настоящий городок</h3>
             <span class="living-number">— №1 —</span>
-            <p class="living-description"> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="living-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="living-photo" src="sedona_live_photo.jpg" alt="Жизнь в Седоне">
             <ul class="services">
               <li class="services-item">
                 <div class="services-picture"></div>
-                <h4 class="services-title">Жильё</h3>
+                <p class="services-title"><b>Жильё</b></p>
                 <p class="services-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="services-item">
                 <div class="services-picture"></div>
-                <h4 class="services-title">Еда</h3>
+                <p class="services-title"><b>Еда</b></p>
                 <p class="services-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
               <li class="services-item">
                 <div class="services-picture"></div>
-                <h4 class="services-title">Сувениры</h3>
+                <p class="services-title"><b>Сувениры</b></p>
                 <p class="services-description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -84,15 +83,16 @@
       </section>
 
       <section class="search-hotels">
-        <h2>Поиск отеля</h2>
-        <p class="search-offer-title">Заинтересовались?</p>
+        <h2 class="visually-hidden">Поиск отеля</h2>
+        <p class="search-offer-title"><b>Заинтересовались?</b>b</p>
         <p class="search-offer-description"> Укажите предполагаемые даты поездки,  и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-offer-button" href="#">Поиск гостиниц в Седоне</a>
-        <form class="form-search-hotels" action="search" method="get">
+        <form class="form-search-hotels" action="#" method="get">
           <!--здесь будет форма-->
         </form>
+
         <div class="map">
-          <img src="map.jpg" width="1200" height="500" alt="Карта">
+          <img src="img/map.jpg" width="1200" height="500" alt="Карта расположения отелей">
         </div>
       </section>
     </main>
@@ -106,7 +106,7 @@
       <div class="social-item">
         <a class="social-twitter" href="#">twitter</a>
         <a class="social-facebook" href="#">facebook</a>
-        <a href="social-youtube" href="#">youtube</a>
+        <a class="social-youtube" href="#">youtube</a>
       </div>
       <div class="copyright-htmlacademy-item">
         <a class="" href="https://htmlacademy.ru/intensive/htmlcss"><span>Website by</span><div class="htmlacademy-logo"></div></a>
