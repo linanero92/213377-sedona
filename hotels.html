@@ -26,7 +26,7 @@
       <h2 class="visually-hidden">Фильтры для поиска</h2>
       <form class="filters-category" action="#" method="get">
         <fieldset>
-          <legend>Инфраструктура</legend>
+          <legend class="filters-category-title">Инфраструктура</legend>
           <ul class="filters-category-infrastructure">
             <li>
               <input type="checkbox" id="filters-category-item" name="pool" value="Бассейн">
@@ -43,7 +43,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Тип жилья</legend>
+          <legend class="filters-category-title">Тип жилья</legend>
           <ul class="filters-category-infrastructure-accommodation">
              <li>
               <input type="checkbox" id="filters-category-item" name="hotel" value="Гостинница">
@@ -60,9 +60,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <div class="filter-price">
-            <label class="filter-price-title" for="price">Стоимость в сутки (P):</label>
-          </div>
+          <legend class="filter-price-title">Стоимость в сутки (р):</legend>
           <div class="filter-price-text">
             <input type="text" name="min-price-show" value="От 0">
             <input type="text" name="max-price-show" value="До 3000">  
@@ -82,15 +80,60 @@
       <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="results-search-text">
               <p class="results-search-title">Найдено: <span class="results-search-amount">3</span></p>
-              <p class="sorting-title">Сортировка:</p>
-              <ul class="sorting-list">
-                <li><span class="sorting-item">По цене</span></li>
-                <li><span class="sorting-item">По типу</span></li>
-                <li><span class="sorting-item">По рейтингу</span></li>
+              <p class="results-sorting-title">Сортировка:</p>
+              <ul class="results-sorting-list">
+                <li><span class="results-sorting-item">По цене</span></li>
+                <li><span class="results-sorting-item">По типу</span></li>
+                <li><span class="results-sorting-item">По рейтингу</span></li>
               </ul>
-            </div>
+          </div>
 
-            
+      <article class="results-search-item">
+        <h3 class="results-item-title">
+          <a href="#">Amara Resort &amp; Spa</a>
+        </h3>
+        <figure class="results-item-image">
+          <img src="img/hotel-1.jpg" width="220" height="165" alt="Фото гостиницы Amara Resort &amp; Spa">
+        </figure>
+        <p class="results-item-type"><b>Гостиница</b></p>
+        <p class="results-item-price"><b>от 4000 р</b></p>
+        <a class="results-button-info" href="#">Подробнее</a>
+        <a class="results-button-booking" href="#">Забронировать</a>
+        <div class="results-ratings-stars"></div>
+        <p class="results-ratings-info">Рейтинг: 8,5</p>
+      </article>
+
+      <article class="results-search-item">
+        <h3 class="results-item-title">
+          <a href="#">Desert Quail Inn</a>
+        </h3>
+        <figure class="results-item-image">
+          <img src="img/hotel-1.jpg" width="220" height="165" alt="Фото мотеля Desert Quail Inn">
+        </figure>
+        <p class="results-item-type"><b>Мотель</b></p>
+        <p class="results-item-price"><b>от 3000 р</b></p>
+        <a class="results-button-info" href="#">Подробнее</a>
+        <a class="results-button-booking" href="#">Забронировать</a>
+        <div class="results-ratings-stars"></div>
+        <p class="results-ratings-info">Рейтинг: 8,9</p>
+      </article>
+
+      <article class="results-search-item">
+        <h3 class="results-item-title">
+          <a href="#">Villas at Poco Diablo</a>
+        </h3>
+        <figure class="results-item-image">
+          <img src="img/hotel-1.jpg" width="220" height="165" alt="Фото гостиницы Amara Resort &amp; Spa">
+        </figure>
+        <p class="results-item-type"><b>Гостиница</b></p>
+        <p class="results-item-price"><b>от 2000 р</b></p>
+        <a class="results-button-info" href="#">Подробнее</a>
+        <a class="results-button-booking" href="#">Забронировать</a>
+        <div class="results-ratings-stars"></div>
+        <p class="results-ratings-info">Рейтинг: 9,2</p>
+      </article>
+     
+
       
     </section>
     
