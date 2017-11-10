@@ -101,11 +101,33 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск отеля</h2>
         <p class="search-title">Заинтересовались?</p>
-        <p class="search-text">Укажите предполагаемые даты поездки,  и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-button" href="#">Поиск гостиниц в Седоне</a>
+        <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search-button" href="hotels.html">Поиск гостиниц в Седоне</a>
 
-        <form class="search-hotels" action="#" method="get">
-            
+        <form class="search-form" action="#" method="get">
+          <p>
+              <label class="search-form-arrival" for="arrival">Дата заезда:</label>
+              <input class="search-form-date" type="text" id="arrival" value="24 апреля 2017">
+              <label class="search-form-calendar" for="arrival">Дата</label>
+          </p>
+            <p>
+              <label class="search-form-departure" for="departure">Дата выезда:</label>
+              <input class="search-form-date" type="text" id="departure" value="4 июля 2017">
+              <label class="search-form-calendar" for="departure">Дата</label>
+            </p>
+
+            <p>
+              <label class="search-form-adults" for="adults">Взрослые:</label>
+                <a class="search-form-less" href="#">Less</a>
+                <input class="search-form-amount" id="adults" type="text" pattern="[0-9]*" value="2" min="0">
+                <a class="search-form-larger" href="#">Larger</a>
+            </p>
+            <p>
+              <label class="search-form-children" for="children">Дети:</label>
+                <a class="search-form-less" href="#">Less</a>
+                <input class="search-form-amount" id="children" type="text" pattern="[0-9]*" value="0" min="0">
+                <a class="search-form-larger" href="#">Larger</a>
+            </p>
         </form>
       </section>
 
@@ -122,14 +144,14 @@
       </div>
       <div class="social">
         <ul class="social-list">
-          <li class="social-item"><a class="social-link" href="https://twitter.com/">twitter</a></li>
-          <li class="social-item"><a class="social-link" href="https://www.facebook.com/">facebook</a></li>
-          <li class="social-item"><a class="social-link" href="https://www.youtube.com/">youtube</a></li>
+          <li class="social-item"><a class="social-link" href="https://twitter.com/" aria-label="twitter"></a></li>
+          <li class="social-item"><a class="social-link" href="https://www.facebook.com/" aria-label="facebook"></a></li>
+          <li class="social-item"><a class="social-link" href="https://www.youtube.com/" aria-label="youtube"></a></li>
         </ul>
       </div>
       <div class="copyright">
         <span class="copyright-text">Website by</span>
-        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy"></a>
       </div>
     </footer>
   </body>
