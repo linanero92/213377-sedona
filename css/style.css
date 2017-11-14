@@ -43,7 +43,7 @@ a {
 }
 
 .main-navigation-link:active {
-  color: rgda(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .active {
@@ -97,6 +97,27 @@ a {
   list-style: none;
 }
 
+.advantages-item:nth-child(1) .advantages-picture {
+  height: 80px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.advantages-item:nth-child(2) .advantages-picture {
+  height: 80px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.advantages-item:nth-child(3) .advantages-picture {
+  height: 80px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 21px;
@@ -140,6 +161,140 @@ a {
 }
 
 .search-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33; 
+}
+
+.select {
+  font-weight: 700;
+  line-height: 26px;
+  color:#000000;
+}
+
+.select-input {
+  font: inherit;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.select-button {
+  height: 38px;
+  vertical-align: middle;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.select-button:hover {
+  cursor: pointer; 
+}
+
+.select-button svg {
+  fill: #a9a9a9;
+}
+
+.select-button svg:hover {
+  fill: #000000;
+}
+
+.select-button svg:active {
+  fill: #81b3d2;
+}
+
+.less::before {
+  content: " ";
+  display: block;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.larger::before {
+  content: " ";
+  display: block;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.larger::after {
+  content: " ";
+  display: block;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.select-submit {
+  font: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.select-submit:hover {
+  cursor: pointer;
+  background-color: #669ec0;
+}
+
+.select-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.hashtag {
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hashtag-link {
+  color: #000000;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+  background-color: #81b3d2;
+}
+
+.social-link:hover {
+  background-color: #669ec0;
+}
+
+.social-link:active {
+  background-color: #5496bd;
+}
+
+.social-link svg {
+  fill: #ffffff;
+}
+
+.social-link svg:active {
+  fill: #88b6d1;
+}
+
+.copyright {
+  text-align: center;
+  line-height: 26px;
+  color: #000000;
+}
+
+.copyright-link svg {
+  fill: #231f20;
+}
+
+.copyright-link svg:hover {
+  fill: #81b3d2;
+}
+
+.copyright-link svg:active {
+  fill: #bdbbbc;
 }
 
