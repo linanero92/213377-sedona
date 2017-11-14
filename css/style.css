@@ -14,6 +14,15 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect (0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  visibility: hidden;
+}
+
 .main-navigation {
   font-weight: 700;
   line-height: 26px;
@@ -40,5 +49,27 @@ a {
 .active {
   color: #766357;
 }
+
+.promo {
+  background-color: #36484d;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading-title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.heading-text {
+  line-height: 26px;
+}
+
 
 
