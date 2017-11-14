@@ -7,9 +7,38 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
 }
+
+.main-navigation {
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation-list {
+  list-style: none;
+}
+
+.main-navigation-link {
+  color: #000000;
+}
+
+.main-navigation-link:hover {
+  color: #81b3d2;
+}
+
+.main-navigation-link:active {
+  color: rgda(0, 0, 0, 0.3);
+}
+
+.active {
+  color: #766357;
+}
+
 
