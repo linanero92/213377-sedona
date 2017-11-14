@@ -46,7 +46,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.active {
+.main-navigation-link.active {
   color: #766357;
 }
 
@@ -178,6 +178,15 @@ a {
   border: none;
 }
 
+.select-input:hover {
+  background-color: #ebebeb;
+}
+
+.select-input:focus {
+  background-color: #ffffff;
+  outline: #e5e5e5 solid 2px;
+}
+
 .select-button {
   height: 38px;
   vertical-align: middle;
@@ -235,8 +244,8 @@ a {
 }
 
 .select-submit:hover {
-  cursor: pointer;
   background-color: #669ec0;
+  cursor: pointer;
 }
 
 .select-submit:active {
@@ -325,10 +334,46 @@ a {
 
 .filters-button-rezult {
   font: inherit;
-  font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.0);
   border: 2px solid #ffffff;
 }
+
+.filters-button-rezult:hover {
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.sort-rezult {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.sort-title {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.sort-link.active {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
 
