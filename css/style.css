@@ -71,5 +71,41 @@ a {
   line-height: 26px;
 }
 
+.features-item {
+  text-align: center;
+}
+
+.features-description {
+  background-color: #81b3d2;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 21px;
+  color: #000000;
+}
+
+.primary {
+  color: #ffffff;
+}
+
+.primary .features-title {
+  color: #ffffff;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 21px;
+  color: #000000;
+}
+
+.advantages-text {
+  color: #333333;
+}
+
+.secondary-wrapper {
+  background-color: #eeeeee;
+}
+
 
 
