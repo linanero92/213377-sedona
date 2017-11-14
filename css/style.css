@@ -111,3 +111,35 @@ a {
   background-color: #eeeeee;
 }
 
+.search-wrapper {
+  text-align: center;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.search-text {
+  line-height: 24px;
+}
+
+.search-button {
+  display: block;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.search-button:hover {
+  background-color: #604e43;
+}
+
+.search-button:active {
+  background-color: #503e33; 
+}
+
