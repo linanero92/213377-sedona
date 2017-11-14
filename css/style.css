@@ -232,6 +232,7 @@ a {
   width: 12px;
   height: 3px;
   background-color: #a9a9a9;
+  transform: rotate(90deg);
 }
 
 .select-submit {
@@ -375,5 +376,82 @@ a {
   color: #81b3d2;
   text-decoration: none;
 }
+
+.sort-control svg {
+  fill: #cacaca;
+}
+
+.sort-control.active svg {
+  fill: #81b3d2;
+}
+
+.sort-control:hover svg {
+  fill: #231f20;
+}
+
+.sort-control:active svg {
+  fill: #81b3d2;
+}
+
+.hotel {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-title-link {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.hotel-title-link:hover {
+  color: #81b3d2;
+}
+
+.hotel-title-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-button {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hotel-bitton {
+  cursor: pointer;
+}
+
+.info {
+  background-color: #81b3d2;
+}
+
+.info:hover {
+  background-color: #669ec0;
+}
+
+.info:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.booking {
+  background-color: #766357;
+}
+
+.booking:hover {
+  background-color: #604e43;
+}
+
+.booking:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.hotel-rating-text {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
 
 
