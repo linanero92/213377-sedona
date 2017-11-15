@@ -191,9 +191,6 @@ a {
   vertical-align: middle;
   border: none;
   background-color: #f2f2f2;
-}
-
-.select-button:hover {
   cursor: pointer; 
 }
 
@@ -241,11 +238,11 @@ a {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
 }
 
 .select-submit:hover {
   background-color: #669ec0;
-  cursor: pointer;
 }
 
 .select-submit:active {
@@ -337,12 +334,12 @@ a {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.0);
   border: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 .filters-button-rezult:hover {
   color: #000000;
   background-color: #ffffff;
-  cursor: pointer;
 }
 
 .sort-rezult {
@@ -414,10 +411,6 @@ a {
 .hotel-button {
   font-weight: 700;
   color: #ffffff;
-}
-
-.hotel-bitton {
-  cursor: pointer;
 }
 
 .info {
