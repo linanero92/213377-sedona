@@ -53,7 +53,6 @@ a {
 .promo {
   background-color: #36484d;
   background-image: url("../img/background-photo.jpg");
-  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -313,7 +312,6 @@ a {
   background-color: #426b87;
   background-image: url("../img/background-photo-2.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .filters-group {
@@ -448,10 +446,21 @@ a {
   background-color: #503e33;
 }
 
+.hotel-rating-list {
+  list-style: none;
+}
+
+.hotel-rating-stars {
+  height: 20px;
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+} 
+
 .hotel-rating-text {
   color: #666666;
   background-color: #f2f2f2;
 }
+
 
 
 
