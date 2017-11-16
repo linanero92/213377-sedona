@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -7,15 +7,21 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  background-color: #ffffff;
 }
 
 .page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 a {
   text-decoration: none;
+}
+
+.svg-sprite {
+  display: none;
 }
 
 /*для скрытия отсутствующих на макете заголовков*/
@@ -61,7 +67,7 @@ a {
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 100% 100%; 
+  background-size: cover; 
 }
 
 .heading {
@@ -104,25 +110,9 @@ a {
   list-style: none;
 }
 
-.advantages-item:nth-child(1) .advantages-picture {
+.advantages-picture {
   height: 76px;
-  background-image: url("../img/icon-1.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.advantages-item:nth-child(2) .advantages-picture {
-  height: 76px;
-  background-image: url("../img/icon-2.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.advantages-item:nth-child(3) .advantages-picture {
-  height: 76px;
-  background-image: url("../img/icon-3.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
+  fill: #81B3D2;
 }
 
 .advantages-title {
@@ -192,7 +182,8 @@ a {
 
 .select-input:focus {
   background-color: #ffffff;
-  outline: #e5e5e5 solid 2px;
+  outline: none;
+  border: #e5e5e5 solid 2px;
 }
 
 .select-button {
@@ -205,6 +196,7 @@ a {
 
 .select-svg {
   fill: #a9a9a9;
+  height: 22px;
 }
 
 .select-svg:hover {
@@ -231,7 +223,7 @@ a {
   background-color: #a9a9a9;
 }
 
-.select-larger::after {
+.select-button.larger::after {
   content: " ";
   display: block;
   width: 12px;
@@ -276,7 +268,6 @@ a {
 
 .social-link {
   display: block;
-  width: 46px;
   height: 48px;
   background-color: #81b3d2;
 }
@@ -291,6 +282,7 @@ a {
 
 .social-svg {
   fill: #ffffff;
+  height: 22px;
 }
 
 .social-svg:active {
@@ -315,16 +307,15 @@ a {
   fill: #bdbbbc;
 }
 
-/*временное позиционирование и размер изображения фона*/
+/*временное позиционирование и размер фонового изображения */
 .filters {
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../img/background-photo-2.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 100% 100%;
+  background-size: cover;
 }
-
 
 .filters-group {
   border: none;
@@ -341,6 +332,7 @@ a {
 
 .filters-group-label {
   font-weight: 400;
+  cursor: pointer;
 }
 
 .filters-button-rezult {
@@ -389,6 +381,7 @@ a {
 
 .sort-control-svg {
   fill: #cacaca;
+  height: 10px;
 }
 
 .sort-control-svg.active {
