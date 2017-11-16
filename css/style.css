@@ -8,6 +8,9 @@ body {
   color: #333333;
   text-transform: uppercase;
   background-color: #ffffff;
+}
+
+.page-wrapper {
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
@@ -15,6 +18,7 @@ a {
   text-decoration: none;
 }
 
+/*для скрытия отсутствующих на макете заголовков*/
 .visually-hidden {
   position: absolute;
   clip: rect (0 0 0 0);
@@ -23,7 +27,6 @@ a {
   margin: -1px;
   visibility: hidden;
 }
-/*для скрытия отсутствующих на макете заголовков*/
 
 .main-navigation {
   font-weight: 700;
@@ -52,6 +55,7 @@ a {
   color: #766357;
 }
 
+/*временное позиционирование и размер фонового изображения*/
 .promo {
   background-color: #81b3d2;
   background-image: url("../img/background-photo.jpg");
@@ -59,7 +63,6 @@ a {
   background-position: 50% 50%;
   background-size: 100% 100%; 
 }
-/*временное позиционирование и размер*/
 
 .heading {
   text-align: center;
@@ -89,11 +92,11 @@ a {
   color: #000000;
 }
 
-.primary {
+.features-item.primary {
   color: #ffffff;
 }
 
-.primary .features-title {
+.features-item.primary .features-title {
   color: #ffffff;
 }
 
@@ -132,7 +135,7 @@ a {
   color: #333333;
 }
 
-.secondary-wrapper {
+.features-items-wrapper {
   background-color: #eeeeee;
 }
 
@@ -200,19 +203,19 @@ a {
   cursor: pointer; 
 }
 
-.select-button svg {
+.select-svg {
   fill: #a9a9a9;
 }
 
-.select-button svg:hover {
+.select-svg:hover {
   fill: #000000;
 }
 
-.select-button svg:active {
+.select-svg:active {
   fill: #81b3d2;
 }
 
-.less::before {
+.select-button.less::before {
   content: " ";
   display: block;
   width: 12px;
@@ -220,7 +223,7 @@ a {
   background-color: #a9a9a9;
 }
 
-.larger::before {
+.select-button.larger::before {
   content: " ";
   display: block;
   width: 12px;
@@ -228,7 +231,7 @@ a {
   background-color: #a9a9a9;
 }
 
-.larger::after {
+.select-larger::after {
   content: " ";
   display: block;
   width: 12px;
@@ -286,11 +289,11 @@ a {
   background-color: #5496bd;
 }
 
-.social-link svg {
+.social-svg {
   fill: #ffffff;
 }
 
-.social-link svg:active {
+.social-svg:active {
   fill: #88b6d1;
 }
 
@@ -300,18 +303,19 @@ a {
   color: #000000;
 }
 
-.copyright-link svg {
+.copyright-svg {
   fill: #231f20;
 }
 
-.copyright-link svg:hover {
+.copyright-svg:hover {
   fill: #81b3d2;
 }
 
-.copyright-link svg:active {
+.copyright-svg:active {
   fill: #bdbbbc;
 }
 
+/*временное позиционирование и размер изображения фона*/
 .filters {
   color: #ffffff;
   background-color: #81b3d2;
@@ -320,7 +324,7 @@ a {
   background-position: 50% 50%;
   background-size: 100% 100%;
 }
-/*временное позиционирование и размер*/
+
 
 .filters-group {
   border: none;
@@ -383,19 +387,19 @@ a {
   text-decoration: none;
 }
 
-.sort-control svg {
+.sort-control-svg {
   fill: #cacaca;
 }
 
-.sort-control.active svg {
+.sort-control-svg.active {
   fill: #81b3d2;
 }
 
-.sort-control:hover svg {
+.sort-control-svg:hover  {
   fill: #231f20;
 }
 
-.sort-control:active svg {
+.sort-control-svg:active {
   fill: #81b3d2;
 }
 
@@ -425,28 +429,28 @@ a {
   text-align: center;
 }
 
-.info {
+.hotel-button.info {
   background-color: #81b3d2;
 }
 
-.info:hover {
+.hotel-button.info:hover {
   background-color: #669ec0;
 }
 
-.info:active {
+.hotel-button.info:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
-.booking {
+.hotel-button.booking {
   background-color: #766357;
 }
 
-.booking:hover {
+.hotel-button.booking:hover {
   background-color: #604e43;
 }
 
-.booking:active {
+.hotel-button.booking:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
