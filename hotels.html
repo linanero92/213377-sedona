@@ -32,17 +32,17 @@
     <!--Header-->
 
       <header class="main-header">
-        <a class="main-header-logo" href="index.html" aria-label="Логотип сайта">
-          <img src="img/logo.png" width="138" height="70" alt="">
-        </a>
-        <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li class="main-navigation-item"><a class="main-navigation-link" href="#">Информация</a></li>
-            <li class="main-navigation-item"><a class="main-navigation-link" href="#">Фото и видео</a></li>
-            <li class="main-navigation-item"><a class="main-navigation-link" href="#">Карта штата</a></li>
-            <li class="main-navigation-item"><a class="main-navigation-link active" href="#">Гостиницы</a></li>
-          </ul>
-        </nav>
+          <a class="main-header-logo" href="index.html" aria-label="Логотип сайта">
+            <img src="img/logo.png" width="138" height="70" alt="">
+          </a>
+          <nav class="main-navigation">
+            <ul class="main-navigation-list">
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Информация</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Фото и видео</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Карта штата</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link active" href="#">Гостиницы</a></li>
+            </ul>
+          </nav>
       </header>
 
     <!--Content-->
@@ -86,7 +86,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filters-group">
+          <fieldset class="filters-group range">
             <legend class="filters-group-title">Стоимость в сутки (р):</legend>
             <!--range-->
           </fieldset>
@@ -111,12 +111,12 @@
             </ul>
           </div>
           <div class="sort-controls">
-            <a class="sort-control up" href="#" aria-label="Вверх">
+            <a class="sort-control up" href="#" aria-label="По возрастанию">
               <svg class="sort-control-svg"> 
                 <use xlink:href="#up"></use>
               </svg>
             </a>
-            <a class="sort-control down active" href="#" aria-label="Вниз">
+            <a class="sort-control down active" href="#" aria-label="По убыванию">
               <svg class="sort-control-svg active">
                 <use xlink:href="#down"></use>
               </svg>
@@ -131,11 +131,17 @@
             </figure>
             <div class="hotel-description">
               <h3 class="hotel-title"><a class="hotel-title-link" href="#">Amara Resort &amp; Spa</a></h3>
-              <p class="hotel-text">Гостиница</p>
-              <p class="hotel-text">от 4000 р</p>
-              <a class="hotel-button info" href="#">Подробнее</a>
-              <a class="hotel-button booking" href="#">Забронировать</a>
-            </div>
+              <div class="hotel-description-wrapper">
+                <div class="hotel-description-flex-wrapper">
+                  <p class="hotel-text">Гостиница</p>
+                  <a class="hotel-button info" href="#">Подробнее</a>
+                </div>
+                <div class="hotel-description-flex-wrapper">
+                  <p class="hotel-text">от 4000 р</p>
+                  <a class="hotel-button booking" href="#">Забронировать</a>
+                </div>
+              </div>
+          </div>
             <div class="hotel-rating">
               <ul class="hotel-rating-list">
                 <li class="hotel-rating-stars"></li>
@@ -153,10 +159,16 @@
             </figure>
             <div class="hotel-description">
               <h3 class="hotel-title"><a class="hotel-title-link" href="#">Desert Quail Inn</a></h3>
-              <p class="hotel-text">Мотель</p>
-              <p class="hotel-text">от 3000 р</p>
-              <a class="hotel-button info" href="#">Подробнее</a>
-              <a class="hotel-button booking" href="#">Забронировать</a>
+              <div class="hotel-description-wrapper">
+                <div class="hotel-description-flex-wrapper">
+                  <p class="hotel-text">Мотель</p>
+                  <a class="hotel-button info" href="#">Подробнее</a>
+                </div>
+                <div class="hotel-description-flex-wrapper">
+                  <p class="hotel-text">от 3000 р</p>
+                  <a class="hotel-button booking" href="#">Забронировать</a>
+                </div>
+              </div>
             </div>
             <div class="hotel-rating">
               <ul class="hotel-rating-list">
@@ -174,10 +186,16 @@
             </figure>
             <div class="hotel-description">
               <h3 class="hotel-title"><a class="hotel-title-link" href="#">Villas at Poco Diablo</a></h3>
-              <p class="hotel-text">Апартаменты</p>
-              <p class="hotel-text">от 2000 р</p>
-              <a class="hotel-button info" href="#">Подробнее</a>
-              <a class="hotel-button booking" href="#">Забронировать</a>
+              <div class="hotel-description-wrapper">
+                <div class="hotel-description-flex-wrapper">
+                  <p class="hotel-text">Апартаменты</p>
+                  <a class="hotel-button info" href="#">Подробнее</a>
+                </div>
+                <div class="hotel-description-flex-wrapper">
+                  <p class="hotel-text">от 2000 р</p>
+                  <a class="hotel-button booking" href="#">Забронировать</a>
+                </div>
+              </div>
             </div>
             <div class="hotel-rating">
               <ul class="hotel-rating-list">
@@ -192,7 +210,7 @@
     
     <!--Footer-->
 
-      <footer class="main-footer">
+      <footer class="main-footer inner">
         <div class="hashtag">
           <a class="hashtag-link" href="#">#visitsedona</a>
         </div>
@@ -231,7 +249,7 @@
             </svg>
           </a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
