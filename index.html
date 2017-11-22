@@ -42,17 +42,17 @@
     <!--Header-->
 
       <header class="main-header">
-        <a class="main-header-logo" aria-label="Логотип сайта">
-          <img src="img/logo.png" width="138" height="70" alt="">
-        </a>
-        <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li class="main-navigation-item"><a class="main-navigation-link" href="#">Информация</a></li>
-            <li class="main-navigation-item"><a class="main-navigation-link" href="#">Фото и видео</a></li>
-            <li class="main-navigation-item"><a class="main-navigation-link" href="#">Карта штата</a></li>
-            <li class="main-navigation-item"><a class="main-navigation-link" href="hotels.html">Гостиницы</a></li>
-          </ul>
-        </nav>
+          <a class="main-header-logo" aria-label="Логотип сайта">
+            <img class="main-header-logo" src="img/logo.png" width="138" height="70" alt="">
+          </a>
+          <nav class="main-navigation">
+            <ul class="main-navigation-list">
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Информация</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Фото и видео</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Карта штата</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="hotels.html">Гостиницы</a></li>
+            </ul>
+          </nav>
       </header>
 
     <!--Сontent-->
@@ -60,7 +60,7 @@
       <main class="container">
         <section class="promo">
           <h1 class="page-title visually-hidden">Добро пожаловать в Седону</h1>
-          <img class="promo-title" src="img/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+          <img class="promo-image" src="img/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
         </section>
       
         <section class="heading">
@@ -77,40 +77,40 @@
               <p class="features-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="features-photo">
-              <img src="img/city.jpg" width="800" height="256" alt="Город Седона">
+              <img src="img/main-city.jpg" width="800" height="256" alt="Город Седона">
             </div>
-          </div>
-
-          <div class="advantages">
-            <ul class="advantages-list">
-              <li class="advantages-item">
-                <svg class="advantages-picture">
-                  <use xlink:href="#haus"></use>
-                </svg>
-                <h4 class="advantages-title">Жильё</h4>
-                <p class="advantages-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="advantages-item">
-                <svg class="advantages-picture">
-                  <use xlink:href="#food"></use>
-                </svg>
-                <h4 class="advantages-title">Еда</h4>
-                <p class="advantages-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-              </li>
-              <li class="advantages-item">
-                <svg class="advantages-picture">
-                  <use xlink:href="#souvenirs"></use>
-                </svg>
-                <h4 class="advantages-title">Сувениры</h4>
-                <p class="advantages-text">Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
           </div>
         </section>
 
+        <div class="advantages">
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <svg class="advantages-picture">
+                <use xlink:href="#haus"></use>
+              </svg>
+              <h4 class="advantages-title">Жильё</h4>
+              <p class="advantages-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advantages-item">
+              <svg class="advantages-picture">
+                <use xlink:href="#food"></use>
+              </svg>
+              <h4 class="advantages-title">Еда</h4>
+              <p class="advantages-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </li>
+            <li class="advantages-item">
+              <svg class="advantages-picture">
+                <use xlink:href="#souvenirs"></use>
+              </svg>
+              <h4 class="advantages-title">Сувениры</h4>
+              <p class="advantages-text">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </div>
+        
         <section class="features-item primary">
           <div class="features-photo">
-            <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+            <img src="img/main-bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
           <div class="features-description ">
             <h3 class="features-title">Там есть мост дьявола</h3>
@@ -129,7 +129,7 @@
           <section class="features-item secondary">
             <h3 class="features-title">Красивая дорога</h3>
             <span class="features-number">— №4 —</span>
-            <p class="features-text">Ехать в Седону из Лас-Вегаса совсем  не долго</p>
+            <p class="features-text">Ехать в Седону из Лас-Вегаса совсем  не скучно</p>
           </section>
 
           <section class="features-item secondary">
@@ -144,7 +144,7 @@
             <h2 class="visually-hidden">Поиск отеля</h2>
             <p class="search-title">Заинтересовались?</p>
             <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-            <a class="search-button" href="hotels.html">Поиск гостиниц в Седоне</a>
+            <a class="search-button" href="#">Поиск гостиниц в Седоне</a>
           </div>
 
           <form class="form select" action="#" method="get">
@@ -190,7 +190,7 @@
 
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <img src="img/map.jpg" alt="Карта расположения города Седоны">
+          <img src="img/main-map.jpg" width="1200" height="593" alt="Карта расположения города Седоны">
         </section>
       </main>
 
@@ -235,7 +235,7 @@
             </svg>
           </a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
