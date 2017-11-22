@@ -1,3 +1,11 @@
+html {
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +14,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  background-color: #f2f2f2;
   text-transform: uppercase;
 }
 
@@ -34,6 +43,21 @@ a {
   visibility: hidden;
 }
 
+.main-header {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.main-header-logo {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  display: block;
+  transform: translateX(-50%);
+  width: 138px;
+  height: 70px;
+}
+
 .main-navigation {
   font-weight: 700;
   line-height: 26px;
@@ -42,7 +66,24 @@ a {
 }
 
 .main-navigation-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-navigation-item {
+  width: 240px;
+  text-align: center;
+  
+  /* Временно для сетки */
+  min-height: 50px;
+}
+
+.main-navigation-item:nth-child(2) {
+  margin-right: 240px;
 }
 
 .main-navigation-link {
@@ -61,35 +102,88 @@ a {
   color: #766357;
 }
 
-/*временное позиционирование и размер фонового изображения*/
 .promo {
+  position: relative;
+  margin-bottom: 58px;
   background-color: #81b3d2;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover; 
+  background-position: 50% 20%;
+  background-size: 1200px 800px;
+  
+  /* Временно для сетки */
+  min-height: 510px;
+}
+
+.promo-image {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/mask.png");
+  background-repeat: no-repeat;
 }
 
 .heading {
+  width: 576px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 55px;
   text-align: center;
 }
 
 .heading-title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
 .heading-text {
+  margin: 0;
+  padding: 0;
   line-height: 26px;
+}
+
+.features-item .features-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .features-item {
   text-align: center;
 }
 
+.features-item.primary {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 58px;
+}
+
 .features-description {
+  width: 400px;
+  padding: 45px 47px;
   background-color: #81b3d2;
+  
+   /* Временно для сетки */
+  min-height: 256px;
+}
+
+.features-photo {
+  width: 800px;
+  height: 256px;
 }
 
 .features-title {
@@ -106,11 +200,28 @@ a {
   color: #ffffff;
 }
 
+.advantages {
+  margin-bottom: 80px;
+}
+
 .advantages-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+.advantages-item {
+  width: 400px;
+  padding: 0 72px;
+  
+  /* Временно для сетки */
+  min-height: 190px;
 }
 
 .advantages-picture {
+  width: 76px;
   height: 76px;
   fill: #81B3D2;
 }
@@ -125,12 +236,34 @@ a {
   color: #333333;
 }
 
+.features-items-wrapper.secondary {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 52px;
+}
+
 .features-item.secondary {
   background-color: #eeeeee;
+  width: 400px;
+  padding-top: 50px;
+  padding-right: 76px;
+  padding-left: 76px;
+  padding-bottom: 60px;
+  
+  /* Временно для сетки */
+  min-height: 257px;
 }
 
 .search-wrapper {
+  width: 576px;
+  padding: 0 80px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
   text-align: center;
+  
+  /* Временно для сетки */
+  min-height: 290px;
 }
 
 .search-title {
@@ -196,6 +329,7 @@ a {
 
 .select-svg {
   fill: #a9a9a9;
+  width: 21px;
   height: 22px;
 }
 
@@ -251,7 +385,26 @@ a {
   background-color: #5496bd;
 }
 
+.map {
+  /* Временно для сетки */
+  height: 475px;
+  position: relative;
+}
+
+.main-footer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: rgba(255, 255, 255, 0.9);
+  
+  /* Временно для сетки */
+  min-height: 120px;
+}
+
 .hashtag {
+  width: 400px;
   text-align: center;
   font-weight: 700;
   font-size: 21px;
@@ -262,12 +415,30 @@ a {
   color: #000000;
 }
 
+.social {
+  width: 400px;
+}
+
 .social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.social-item:nth-child(1) {
+  margin-right: 5px;
+}
+
+.social-item:nth-child(2) {
+  margin-right: 5px;
 }
 
 .social-link {
   display: block;
+  width: 48px;
   height: 48px;
   background-color: #81b3d2;
 }
@@ -280,9 +451,23 @@ a {
   background-color: #5496bd;
 }
 
+.social-item:nth-child(1) .social-svg {
+  width: 17px;
+  height: 15px;
+}
+
+.social-item:nth-child(2) .social-svg {
+  width: 12px;
+  height: 22px;
+}
+
+.social-item:nth-child(3) .social-svg {
+  width: 20px;
+  height: 16px;
+}
+
 .social-svg {
   fill: #ffffff;
-  height: 22px;
 }
 
 .social-svg:active {
@@ -290,6 +475,7 @@ a {
 }
 
 .copyright {
+  width: 400px;
   text-align: center;
   line-height: 26px;
   color: #000000;
@@ -297,6 +483,8 @@ a {
 
 .copyright-svg {
   fill: #231f20;
+  width: 200px;
+  height: 43px;
 }
 
 .copyright-svg:hover {
@@ -307,18 +495,31 @@ a {
   fill: #bdbbbc;
 }
 
-/*временное позиционирование и размер фонового изображения */
 .filters {
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../img/background-photo-2.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 100% 30%;
   background-size: cover;
+  
+  /* Временно для сетки */
+  min-height: 217px;
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .filters-group {
   border: none;
+  width: 180px;
+}
+
+.filters-group.range {
+  width: 360px;
 }
 
 .filters-group-title {
@@ -349,7 +550,29 @@ a {
   background-color: #ffffff;
 }
 
+.sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 72px;
+}
+
+.sort-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.sort-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
 .sort-rezult {
+  margin: 0;
+  margin-right: 48px;
+  padding: 0;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -357,6 +580,9 @@ a {
 }
 
 .sort-title {
+  margin: 0;
+  margin-right: 38px;
+  padding: 0;
   font-size: 12px;
   line-height: 18px;
   color: #000000
@@ -364,6 +590,9 @@ a {
 
 .sort-list {
   list-style: none;
+}
+.sort-item {
+  margin-right: 28px;
 }
 
 .sort-link {
@@ -379,8 +608,13 @@ a {
   text-decoration: none;
 }
 
+.sort-control.up {
+  margin-right: 10px;
+}
+
 .sort-control-svg {
   fill: #cacaca;
+  width: 11px;
   height: 10px;
 }
 
@@ -396,9 +630,49 @@ a {
   fill: #81b3d2;
 }
 
+.content-items {
+  display: flex;
+  
+}
+
+.content-items {
+  display: flex;
+  flex-direction: column;
+}
+
 .hotel {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 72px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
+  
+   /* Временно для сетки */
+  min-height: 180px;
+}
+
+.hotel-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-description-wrapper {
+   display: flex;
+   flex-direction: row;
+}
+
+.hotel-description-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-description-flex-wrapper:first-child {
+  margin-right: 5px;
+}
+
+.hotel-title {
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-title-link {
@@ -416,7 +690,9 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+
 .hotel-button {
+  padding: 5px 15px;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -448,17 +724,30 @@ a {
   background-color: #503e33;
 }
 
+.hotel-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
 .hotel-rating-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   list-style: none;
 }
 
 .hotel-rating-stars {
+  width: 18px;
   height: 17px;
   background-image: url("../img/star.svg");
   background-repeat: no-repeat;
 } 
 
 .hotel-rating-text {
+  margin: 0;     
+  padding: 4px 17px;
   color: #666666;
   text-align: center;
   background-color: #f2f2f2;
