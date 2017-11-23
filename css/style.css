@@ -416,18 +416,11 @@ a {
 
 .social-list {
   display: flex;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
+  width: 155px;
   list-style: none;
-}
-
-.social-item:nth-child(1) {
-  margin-right: 5px;
-}
-
-.social-item:nth-child(2) {
-  margin-right: 5px;
 }
 
 .social-link {
