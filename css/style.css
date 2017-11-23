@@ -642,15 +642,6 @@ a {
   display: flex;
 }
 
-.hotel-description-wrapper-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.hotel-description-wrapper-column:first-child {
-  margin-right: 5px;
-}
-
 .hotel-title {
   margin: 0;
   padding: 0;
