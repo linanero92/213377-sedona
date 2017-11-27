@@ -74,7 +74,7 @@
             <div class="features-description">
               <h3 class="features-title">Настоящий городок</h3>
               <span class="features-number">— №1 —</span>
-              <p class="features-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="features-text primary">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="features-photo">
               <img src="img/main-city.jpg" width="800" height="256" alt="Город Седона">
@@ -112,8 +112,8 @@
           <div class="features-photo">
             <img src="img/main-bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
-          <div class="features-description ">
-            <h3 class="features-title">Там есть мост дьявола</h3>
+          <div class="features-description">
+            <h3 class="features-title">Там есть<br>мост дьявола</h3>
             <span class="features-number">— №2 —</span> 
             <p class="features-text">Да, по нему можно пройти! Если, конечно, Вы осмелитесь.</p>
           </div>
@@ -129,7 +129,7 @@
           <section class="features-item secondary">
             <h3 class="features-title">Красивая дорога</h3>
             <span class="features-number">— №4 —</span>
-            <p class="features-text">Ехать в Седону из Лас-Вегаса совсем  не скучно</p>
+            <p class="features-text">Ехать в Седону из Лас-Вегаса совсем  не скучно!</p>
           </section>
 
           <section class="features-item secondary">
@@ -143,15 +143,15 @@
           <div class="search-wrapper">
             <h2 class="visually-hidden">Поиск отеля</h2>
             <p class="search-title">Заинтересовались?</p>
-            <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-            <a class="search-button" href="#">Поиск гостиниц в Седоне</a>
+            <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           </div>
-
+          
+          <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
           <form class="form select" action="#" method="get">
             <div class="select-wrapper">
-              <label class="select-label" for="arrival">Дата заезда:</label>
+              <label class="select-label date" for="arrival">Дата заезда:</label>
               <input class="select-input" type="text" id="arrival" value="24 апреля 2017">
-              <button class="select-button" aria-label="Календарь для выбора даты">
+              <button class="select-button date" aria-label="Календарь для выбора даты">
                 <svg class="select-svg">
                   <use xlink:href="#calendar"></use>
                 </svg>
@@ -159,32 +159,30 @@
             </div>
 
             <div class="select-wrapper">
-              <label class="select-label" for="departure">Дата выезда:</label>
+              <label class="select-label date" for="departure">Дата выезда:</label>
               <input class="select-input" type="text" id="departure" value="4 июля 2017">
-              <button class="select-button" aria-label="Календарь для выбора даты">
+              <button class="select-button date" aria-label="Календарь для выбора даты">
                 <svg class="select-svg">
                   <use xlink:href="#calendar"></use>
                 </svg>
               </button>
             </div>
+            <div class="select-wrapper-number">
+              <div class="select-wrapper  adults">
+                <label class="select-label number adults" for="adults">Взрослые:</label>
+                <button class="select-button less adults" aria-label="Меньше"></button>
+                <input class="select-input number adults" id="adults" type="number" value="2">
+                <button class="select-button larger adults" aria-label="Больше"></button>
+              </div>
 
-            <div class="select-wrapper">
-              <label class="select-label" for="adults">Взрослые:</label>
-              <button class="select-button less" aria-label="Меньше"></button>
-              <input class="select-input number" id="adults" type="number" value="2">
-              <button class="select-button larger" aria-label="Больше"></button>
+              <div class="select-wrapper children">
+                <label class="select-label number children" for="children">Дети:</label>
+                <button class="select-button less children" aria-label="Меньше"></button>
+                <input class="select-input number children" id="children" type="number" value="0">
+                <button class="select-button larger children" aria-label="Больше"></button>
+              </div>
             </div>
-
-            <div class="select-wrapper">
-              <label class="select-label" for="children">Дети:</label>
-              <button class="select-button less" aria-label="Меньше"></button>
-              <input class="select-input number" id="children" type="number" value="0">
-              <button class="select-button larger" aria-label="Больше"></button>
-            </div>
-
-            <div class="select-wrapper">
-              <button class="select-submit" type="submit">Найти</button>
-            </div>
+            <button class="select-submit" type="submit">Найти</button>
           </form>
         </section>
 
