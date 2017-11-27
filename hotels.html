@@ -54,15 +54,15 @@
             <legend class="filters-group-title">Инфраструктура</legend>
             <ul class="filters-group-list">
               <li class="filters-group-item">
-                <input class="filters-group-checkbox" type="checkbox" id="pool" name="pool" value="Бассейн" checked>
+                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="pool" name="pool" value="Бассейн" checked>
                 <label class="filters-group-label" for="pool">Бассейн</label>
               </li>
               <li class="filters-group-item">
-                <input class="filters-group-checkbox" type="checkbox" id="parking" name="parking" value="Парковка">
+                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="parking" name="parking" value="Парковка">
                 <label class="filters-group-label" for="parking">Парковка</label>
               </li>
               <li class="filters-group-item">
-                <input class="filters-group-checkbox" type="checkbox" id="wi_fi" name="wi_fi" value="Wi Fi">
+                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="wi_fi" name="wi_fi" value="Wi Fi">
                 <label class="filters-group-label" for="wi_fi">Wi-Fi</label>
               </li>
             </ul>
@@ -72,23 +72,33 @@
             <legend class="filters-group-title">Тип жилья</legend>
             <ul class="filters-group-list">
               <li class="filters-group-item">
-                <input class="filters-group-checkbox" type="checkbox" id="hotel" name="hotel" value="Гостинница" checked>
+                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="hotel" name="hotel" value="Гостинница" checked>
                 <label class="filters-group-label" for="hotel">Гостинница</label>
               </li>
               <li class="filters-group-item">
-                <input class="filters-group-checkbox" type="checkbox" id="motel" name="motel" value="Мотель" checked>
+                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="motel" name="motel" value="Мотель" checked>
                 <label class="filters-group-label" for="motel">Мотель</label>
               </li>
               <li class="filters-group-item">
-                <input class="filters-group-checkbox" type="checkbox" id="apartments" name="apartments" value="Апартаменты" checked>
+                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="apartments" name="apartments" value="Апартаменты" checked>
                 <label class="filters-group-label" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="filters-group range">
-            <legend class="filters-group-title">Стоимость в сутки (р):</legend>
-            <!--range-->
+          <fieldset class="filters-group filter-range">
+            <legend class="filters-group-title filter-range">Стоимость в сутки (р):</legend>
+            <div class="filters-group-price-controls">
+              <label class="filters-group-label min-price">от <input class="filters-group-input" type="text" name="min-price" value="0"></label>
+              <label class="filters-group-label max-price">до <input class="filters-group-input" type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="filters-group-range-controls">
+              <div class="filters-group-scale">
+                <div class="filters-group-bar"></div>
+              </div>
+              <div class="filters-group-toggle range-toggle-min"></div>
+              <div class="filters-group-toggle range-toggle-max"></div>
+            </div>
           </fieldset>
 
           <div class="filters-button">
@@ -135,7 +145,7 @@
                 <p class="hotel-text">Гостиница</p>
                 <p class="hotel-text">от 4000 р</p>
               </div>
-              <div class="hotel-description-wrapper">
+              <div class="hotel-description-wrapper button">
                 <a class="hotel-button info" href="#">Подробнее</a>
                 <a class="hotel-button booking" href="#">Забронировать</a>
               </div>
@@ -161,7 +171,7 @@
                 <p class="hotel-text">Мотель</p>
                 <p class="hotel-text">от 3000 р</p>
               </div>
-              <div class="hotel-description-wrapper">
+              <div class="hotel-description-wrapper button">
                 <a class="hotel-button info" href="#">Подробнее</a>
                 <a class="hotel-button booking" href="#">Забронировать</a>
               </div>
@@ -186,7 +196,7 @@
                 <p class="hotel-text">Апартаменты</p>
                 <p class="hotel-text">от 2000 р</p>
               </div>
-              <div class="hotel-description-wrapper">
+              <div class="hotel-description-wrapper button">
                 <a class="hotel-button info" href="#">Подробнее</a>
                 <a class="hotel-button booking" href="#">Забронировать</a>
               </div>
