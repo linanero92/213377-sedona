@@ -673,7 +673,6 @@ input[type="checkbox"].visually-hidden {
 .filters-form {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .filters-group {
@@ -823,7 +822,7 @@ input[type="checkbox"].visually-hidden {
 .sort {
   display: flex;
   justify-content: space-between;
-  padding-top: 32px;
+  padding-top: 33px;
   padding-right: 72px;
   padding-left: 72px;
   padding-bottom: 30px;
@@ -862,6 +861,8 @@ input[type="checkbox"].visually-hidden {
 
 .sort-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sort-item {
