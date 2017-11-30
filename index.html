@@ -148,9 +148,9 @@
           
           <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
           <form class="form select" action="#" method="get">
-            <div class="select-wrapper">
+            <div class="select-wrapper date">
               <label class="select-label date" for="arrival">Дата заезда:</label>
-              <input class="select-input" type="text" id="arrival" value="24 апреля 2017">
+              <input class="select-input" type="text" id="arrival" value="" placeholder="24 апреля 2017">
               <button class="select-button date" aria-label="Календарь для выбора даты">
                 <svg class="select-svg">
                   <use xlink:href="#calendar"></use>
@@ -158,9 +158,9 @@
               </button>
             </div>
 
-            <div class="select-wrapper">
+            <div class="select-wrapper date">
               <label class="select-label date" for="departure">Дата выезда:</label>
-              <input class="select-input" type="text" id="departure" value="4 июля 2017">
+              <input class="select-input" type="text" id="departure" value="" placeholder="4 июля 2017">
               <button class="select-button date" aria-label="Календарь для выбора даты">
                 <svg class="select-svg">
                   <use xlink:href="#calendar"></use>
@@ -189,6 +189,9 @@
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
           <img src="img/main-map.jpg" width="1200" height="593" alt="Карта расположения города Седоны">
+          <iframe title="Седона, штат Аризона,США" width="1200" height="593" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCafgVM8BF5IYPXhWMOKR_jamIFknXlp9M&q=Седона,+Аризона+86336,+США">
+          </iframe>
+
         </section>
       </main>
 
