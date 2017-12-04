@@ -103,18 +103,22 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 }
 
-.main-navigation-item:nth-child(1),
-.main-navigation-item:nth-child(2) {
+.main-navigation-item:nth-child(4n+1),
+.main-navigation-item:nth-child(4n+2) {
   text-align: left;
 }
 
-.main-navigation-item:nth-child(3),
-.main-navigation-item:nth-child(4) {
+.main-navigation-item:nth-child(4n+3),
+.main-navigation-item:nth-child(4n+4) {
   text-align: right;
 }
 
-.main-navigation-item:nth-child(2) {
+.main-navigation-item:nth-child(4n+2) {
   margin-right: 96px;
+}
+
+.main-navigation-item:nth-child(4n+3) {
+  margin-left: 0;
 }
 
 .main-navigation-link {
