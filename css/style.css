@@ -313,6 +313,7 @@ input[type="checkbox"].visually-hidden {
 
 .search {
   position: relative;
+  z-index: 2;
   text-align: center;
 }
 
@@ -339,6 +340,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-button {
+  position: relative;
+  z-index: 5;
   padding: 30px 139px;
   margin: 0;
   font: inherit;
@@ -363,11 +366,8 @@ input[type="checkbox"].visually-hidden {
 
 .select {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,8 +378,9 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 565px;
+  width: 566px;
   padding: 56px 52px;
+  margin-left: -283px;
   font-weight: 700;
   line-height: 26px;
   color:#000000;
@@ -426,19 +427,24 @@ input[type="checkbox"].visually-hidden {
                    inset -2px -2px #e5e5e5;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.select-input[type="number"]::-webkit-outer-spin-button,
+.select-input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0;
 }
 
-input[type="number"] {
+.select-input[type="number"] {
   -moz-appearance: textfield;
+}
+
+.select-input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 .select-input[type="number"]:hover,
 .select-input[type="number"]:focus {
-  -moz-appearance: number-input;
+  -moz-appearance: textfield;
 }
 
 .select-input::-webkit-input-placeholder {
@@ -492,10 +498,11 @@ input[type="number"] {
 }
 
 .select-button.date {
-  top: 7px;
-  right: 4px;
+  top: 6px;
+  right: 7px;
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .select-button.date:hover {
@@ -510,12 +517,12 @@ input[type="number"] {
 
 .select-button.larger {
   top: 5px;
-  right: 3px;
+  right: 5px;
 }
 
 .select-button.less {
   top: 5px;
-  right: 79px;
+  right: 81px;
 }
 
 .select-wrapper-number {
@@ -558,6 +565,7 @@ input[type="number"] {
   display: block;
   width: 11px;
   height: 3px;
+  margin-left: 2px;
   background-color: #a9a9a9;
 }
 
@@ -566,6 +574,7 @@ input[type="number"] {
   display: block;
   width: 11px;
   height: 3px;
+  margin-left: 2px;
   background-color: #000000;
 }
 
@@ -574,6 +583,7 @@ input[type="number"] {
   display: block;
   width: 11px;
   height: 3px;
+  margin-left: 2px;
   background-color: #81b3d2;
 }
 
@@ -582,6 +592,7 @@ input[type="number"] {
   display: block;
   width: 11px;
   height: 3px;
+  margin-left: 2px;
   background-color: #a9a9a9;
 }
 
@@ -590,6 +601,7 @@ input[type="number"] {
   display: block;
   width: 11px;
   height: 3px;
+  margin-left: 2px;
   background-color: #000000;
 }
 
@@ -598,6 +610,7 @@ input[type="number"] {
   display: block;
   width: 11px;
   height: 3px;
+  margin-left: 2px;
   background-color: #81b3d2;
 }
 
@@ -607,6 +620,7 @@ input[type="number"] {
   width: 11px;
   height: 3px;
   margin-top: -3px;
+  margin-left: 2px;
   background-color: #a9a9a9;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -619,6 +633,7 @@ input[type="number"] {
   width: 11px;
   height: 3px;
   margin-top: -3px;
+  margin-left: 2px;
   background-color: #000000;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -631,6 +646,7 @@ input[type="number"] {
   width: 11px;
   height: 3px;
   margin-top: -3px;
+  margin-left: 2px;
   background-color: #81b3d2;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -638,8 +654,7 @@ input[type="number"] {
 }
 
 .select-submit {
-  width: 100%;
-  padding: 16px 0;
+  padding: 16px 195px;
   font: inherit;
   font-weight: 700;
   font-size: 21px;
@@ -822,7 +837,7 @@ input[type="number"] {
 .filters {
   padding-top: 27px;
   padding-right: 72px;
-  padding-bottom: 31px;
+  padding-bottom: 34px;
   padding-left: 72px;
   color: #ffffff;
   background-color: #81b3d2;
@@ -833,7 +848,16 @@ input[type="number"] {
 }
 
 .filters-form {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filters-form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,7 +865,7 @@ input[type="number"] {
 
 .filters-group {
   border: none;
-  width: 274px;
+  width: 277px;
   margin: 0;
   padding: 0;
 }
@@ -864,19 +888,20 @@ input[type="number"] {
 
 .filters-group-item {
   position: relative;
-  padding-left: 41px;
+  padding-left: 40px;
   margin-bottom: 25px;
   cursor: pointer;
 }
 
-.filters-group-checkbox + .checkbox-indicator {
+.filters-group-checkbox:not(:checked) + .checkbox-indicator {
+  content: "";
   position: absolute;
-  top: -1px;
+  top: -2px;
   left: 0;
   width: 23px;
   height: 23px;
-  border: 2px solid #ffffff;
-  border-radius: 12%;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
 }
 
 .filters-group-checkbox:focus + .checkbox-indicator {
@@ -887,7 +912,7 @@ input[type="number"] {
   content: "";
   position: absolute;
   top: -2px;
-  left: -2px;
+  left: 0;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -895,20 +920,21 @@ input[type="number"] {
 }
 
 .filters-group-checkbox:disabled + .checkbox-indicator {
+  content: "";
   position: absolute;
-  top: -1px;
+  top: -2px;
   left: 0;
   width: 23px;
   height: 23px;
-  border: 2px solid #6a6a6a;
-  border-radius: 12%;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
 }
 
 .filters-group-checkbox:checked:disabled + .checkbox-indicator::before {
   content: "";
   position: absolute;
   top: -2px;
-  left: -2px;
+  left: 0;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on-disabled.svg");
@@ -930,7 +956,7 @@ input[type="number"] {
 
 .filters-group.filter-range {
   width: 342px;
-  margin-left: 232px;
+  margin-left: 228px;
 }
 
 .filters-group-price-controls {
@@ -1016,10 +1042,6 @@ input[type="number"] {
   height: 21px;
 }
 
-.filters-group-toggle:hover {
-  background: #1c4f80;
-}
-
 .filters-group-toggle:focus {
   outline: 2px solid #81b3d2;
 }
@@ -1029,14 +1051,13 @@ input[type="number"] {
 }
 
 .filters-group-toggle.range-toggle-max {
-  left: 79%;
+  left: 80%;
 }
 
 .filters-button {
-  position: absolute;
-  z-index: 2;
-  right: 97px;
-  bottom: 3px;
+  margin-top: -38px;
+  margin-right: 96px;
+  margin-left: auto;
 }
 
 .filters-button-rezult {
@@ -1101,7 +1122,7 @@ input[type="number"] {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  margin-right: 38px;
+  margin-right: 39px;
   font-size: 12px;
   line-height: 18px;
   color: #000000
@@ -1200,7 +1221,7 @@ input[type="number"] {
 
 .hotel-figure {
   margin: 0;
-  margin-right: 30px;
+  margin-right: 31px;
   padding: 0;
 }
 

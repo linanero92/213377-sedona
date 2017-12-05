@@ -50,63 +50,64 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтры для поиска</h2>
         <form class="filters-form" action="#" method="get">
-          <fieldset class="filters-group">
-            <legend class="filters-group-title">Инфраструктура</legend>
-            <ul class="filters-group-list">
-              <li class="filters-group-item">
-                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="pool" name="pool" value="Бассейн" checked>
-                <span class="checkbox-indicator"></span>
-                <label class="filters-group-label" for="pool">Бассейн</label>
-              </li>
-              <li class="filters-group-item">
-                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="parking" name="parking" value="Парковка">
-                <span class="checkbox-indicator"></span>
-                <label class="filters-group-label" for="parking">Парковка</label>
-              </li>
-              <li class="filters-group-item">
-                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="wi_fi" name="wi_fi" value="Wi Fi">
-                <span class="checkbox-indicator"></span>
-                <label class="filters-group-label" for="wi_fi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="filters-form-wrapper">
+            <fieldset class="filters-group">
+              <legend class="filters-group-title">Инфраструктура</legend>
+              <ul class="filters-group-list">
+                <li class="filters-group-item">
+                  <input class="filters-group-checkbox visually-hidden" type="checkbox" id="pool" name="pool" value="Бассейн" checked>
+                  <span class="checkbox-indicator"></span>
+                  <label class="filters-group-label" for="pool">Бассейн</label>
+                </li>
+                <li class="filters-group-item">
+                  <input class="filters-group-checkbox visually-hidden" type="checkbox" id="parking" name="parking" value="Парковка">
+                  <span class="checkbox-indicator"></span>
+                  <label class="filters-group-label" for="parking">Парковка</label>
+                </li>
+                <li class="filters-group-item">
+                  <input class="filters-group-checkbox visually-hidden" type="checkbox" id="wi_fi" name="wi_fi" value="Wi Fi">
+                  <span class="checkbox-indicator"></span>
+                  <label class="filters-group-label" for="wi_fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="filters-group">
-            <legend class="filters-group-title">Тип жилья</legend>
-            <ul class="filters-group-list">
-              <li class="filters-group-item">
-                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="hotel" name="hotel" value="Гостинница" checked>
-                <span class="checkbox-indicator"></span>
-                <label class="filters-group-label" for="hotel">Гостинница</label>
-              </li>
-              <li class="filters-group-item">
-                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="motel" name="motel" value="Мотель" checked>
-                <span class="checkbox-indicator"></span>
-                <label class="filters-group-label" for="motel">Мотель</label>
-              </li>
-              <li class="filters-group-item">
-                <input class="filters-group-checkbox visually-hidden" type="checkbox" id="apartments" name="apartments" value="Апартаменты" checked>
-                <span class="checkbox-indicator"></span>
-                <label class="filters-group-label" for="apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="filters-group">
+              <legend class="filters-group-title">Тип жилья</legend>
+              <ul class="filters-group-list">
+                <li class="filters-group-item">
+                  <input class="filters-group-checkbox visually-hidden" type="checkbox" id="hotel" name="hotel" value="Гостинница" checked>
+                  <span class="checkbox-indicator"></span>
+                  <label class="filters-group-label" for="hotel">Гостиница</label>
+                </li>
+                <li class="filters-group-item">
+                  <input class="filters-group-checkbox visually-hidden" type="checkbox" id="motel" name="motel" value="Мотель" checked>
+                  <span class="checkbox-indicator"></span>
+                  <label class="filters-group-label" for="motel">Мотель</label>
+                </li>
+                <li class="filters-group-item">
+                  <input class="filters-group-checkbox visually-hidden" type="checkbox" id="apartments" name="apartments" value="Апартаменты" checked>
+                  <span class="checkbox-indicator"></span>
+                  <label class="filters-group-label" for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="filters-group filter-range">
-            <legend class="filters-group-title filter-range">Стоимость в сутки (р):</legend>
-            <div class="filters-group-price-controls">
-              <label class="filters-group-label min-price">от <input class="filters-group-input" type="text" name="min-price" value="0"></label>
-              <label class="filters-group-label max-price">до <input class="filters-group-input" type="text" name="max-price" value="3000"></label>
-            </div>
-            <div class="filters-group-range-controls">
-              <div class="filters-group-scale">
-                <div class="filters-group-bar"></div>
+            <fieldset class="filters-group filter-range">
+              <legend class="filters-group-title filter-range">Стоимость в сутки (р):</legend>
+              <div class="filters-group-price-controls">
+                <label class="filters-group-label min-price">от <input class="filters-group-input" type="text" name="min-price" value="0"></label>
+                <label class="filters-group-label max-price">до <input class="filters-group-input" type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="filters-group-toggle range-toggle-min" tabindex="0"></div>
-              <div class="filters-group-toggle range-toggle-max" tabindex="0"></div>
-            </div>
-          </fieldset>
-
+              <div class="filters-group-range-controls">
+                <div class="filters-group-scale">
+                  <div class="filters-group-bar"></div>
+                </div>
+                <div class="filters-group-toggle range-toggle-min" tabindex="0"></div>
+                <div class="filters-group-toggle range-toggle-max" tabindex="0"></div>
+              </div>
+            </fieldset>
+          </div>
           <div class="filters-button">
             <button class="filters-button-rezult" name="show" type="submit">Показать</button>      
           </div>
@@ -126,12 +127,12 @@
           </div>
           <div class="sort-controls">
             <a class="sort-control up" href="#" aria-label="По возрастанию">
-              <svg class="sort-control-svg"> 
+              <svg width="11" height="10" class="sort-control-svg"> 
                 <use xlink:href="#up"></use>
               </svg>
             </a>
             <a class="sort-control down active" href="#" aria-label="По убыванию">
-              <svg class="sort-control-svg active">
+              <svg width="11" height="10" class="sort-control-svg active">
                 <use xlink:href="#down"></use>
               </svg>
             </a>
@@ -227,21 +228,21 @@
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link" href="https://twitter.com/" aria-label="twitter">
-                <svg class="social-svg twitter">
+                <svg width="17" height="15" class="social-svg twitter">
                   <use xlink:href="#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://www.facebook.com/" aria-label="facebook">
-                <svg class="social-svg facebook">
+                <svg width="12" height="22" class="social-svg facebook">
                   <use xlink:href="#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://www.youtube.com/" aria-label="youtube">
-                <svg class="social-svg youtube">
+                <svg width="20" height="16" class="social-svg youtube">
                   <use xlink:href="#youtube"></use>
                 </svg>
               </a>

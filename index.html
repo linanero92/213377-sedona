@@ -141,34 +141,34 @@
             <p class="search-title">Заинтересовались?</p>
             <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           </div>
-          
-          <button class="search-button">Поиск гостиницы в Седоне</button>
-          <form class="form select" action="#" method="get">
+        
+          <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+          <form class="form select form-show form-hide" action="#" method="get" onsubmit="return formValidate()">
             <div class="select-wrapper date">
               <label class="select-label date" for="arrival">Дата заезда:</label>
-              <input class="select-input date" type="text" id="arrival" value="" placeholder="24 апреля 2017">
-              <button class="select-button date" aria-label="Календарь для выбора даты"></button>
+              <input class="select-input date" type="text" id="arrival" name="arrival" value="" placeholder="24 апреля 2017">
+              <button class="select-button date" type="button" aria-label="Календарь для выбора даты"></button>
             </div>
 
             <div class="select-wrapper date">
               <label class="select-label date" for="departure">Дата выезда:</label>
-              <input class="select-input date" type="text" id="departure" value="" placeholder="4 июля 2017">
-              <button class="select-button date" aria-label="Календарь для выбора даты"></button>
+              <input class="select-input date" type="text" id="departure" name="departure" value="" placeholder="4 июля 2017">
+              <button class="select-button date" type="button" aria-label="Календарь для выбора даты"></button>
             </div>
             
             <div class="select-wrapper-number">
               <div class="select-wrapper  adults">
                 <label class="select-label number adults" for="adults">Взрослые:</label>
-                <button class="select-button less adults" aria-label="Меньше"></button>
-                <input class="select-input number adults" id="adults" type="number" value="2">
-                <button class="select-button larger adults" aria-label="Больше"></button>
+                <button class="select-button less adults" type="button" aria-label="Меньше"></button>
+                <input class="select-input number adults" type="number" id="adults" name="adults"  value="2">
+                <button class="select-button larger adults" type="button" aria-label="Больше"></button>
               </div>
 
               <div class="select-wrapper children">
                 <label class="select-label number children" for="children">Дети:</label>
-                <button class="select-button less children" aria-label="Меньше"></button>
-                <input class="select-input number children" id="children" type="number" value="0">
-                <button class="select-button larger children" aria-label="Больше"></button>
+                <button class="select-button less children" type="button" aria-label="Меньше"></button>
+                <input class="select-input number children" type="number" id="children" name="children" value="0">
+                <button class="select-button larger children" type="button" aria-label="Больше"></button>
               </div>
             </div>
             <button class="select-submit" type="submit">Найти</button>
@@ -193,21 +193,21 @@
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link" href="https://twitter.com/" aria-label="twitter">
-                <svg class="social-svg twitter">
+                <svg width="7" height="15" class="social-svg twitter">
                   <use xlink:href="#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://www.facebook.com/" aria-label="facebook">
-                <svg class="social-svg facebook">
+                <svg width="12" height="22" class="social-svg facebook">
                   <use xlink:href="#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://www.youtube.com/" aria-label="youtube">
-                <svg class="social-svg youtube">
+                <svg width="20" height="16" class="social-svg youtube">
                   <use xlink:href="#youtube"></use>
                 </svg>
               </a>
@@ -218,7 +218,7 @@
         <div class="copyright">
           <span class="copyright-text">Website by</span>
           <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy">
-            <svg class="copyright-svg">
+            <svg width="108.08" height="36.85" class="copyright-svg">
               <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
