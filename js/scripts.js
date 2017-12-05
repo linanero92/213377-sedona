@@ -6,6 +6,8 @@ var adultsAmount = modal.querySelector("[name=adults]");
 var childrenAmount = modal.querySelector("[name=children]");
 var form = document.querySelector("form");
 
+
+modal.classList.add("form-hide")
 modalButton.addEventListener("click", function(){
   modal.classList.toggle("form-hide")
 });
