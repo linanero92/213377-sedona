@@ -995,7 +995,7 @@ input[type="checkbox"].visually-hidden {
   cursor: pointer;
 }
 
-.filters-group-checkbox:not(:checked) + .checkbox-indicator {
+.filters-group-checkbox:not(:checked) + .checkbox-indicator::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -1004,10 +1004,6 @@ input[type="checkbox"].visually-hidden {
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-}
-
-.filters-group-checkbox:focus + .checkbox-indicator {
-  outline: 2px solid #81b3d2;
 }
 
 .filters-group-checkbox:checked + .checkbox-indicator::before  {
@@ -1019,6 +1015,14 @@ input[type="checkbox"].visually-hidden {
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+}
+
+.filters-group-checkbox:not(:checked):focus + .checkbox-indicator::before {
+  outline: 2px solid #489ec2;
+}
+
+.filters-group-checkbox:checked:focus + .checkbox-indicator::before  {
+  outline: 2px solid #489ec2;
 }
 
 .filters-group-checkbox:disabled + .checkbox-indicator {
@@ -1041,10 +1045,6 @@ input[type="checkbox"].visually-hidden {
   height: 23px;
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
-}
-
-.filters-group-checkbox:focus ~ .filters-group-label {
-  outline: 2px solid #81b3d2;
 }
 
 .filters-group-item:last-child {
