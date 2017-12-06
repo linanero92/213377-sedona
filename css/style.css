@@ -402,31 +402,50 @@ input[type="checkbox"].visually-hidden {
   background-color: #ffffff;
 }
 
-@keyframes down {
+@-webkit-keyframes down {
   0% { 
-    transform: translateY(-33%);
+    -webkit-transform: translateY(-33%); 
+            transform: translateY(-33%);
   }
 
   100% { 
-    transform: translateY(0); 
+    -webkit-transform: translateY(0); 
+            transform: translateY(0); 
+  }
+}
+
+@keyframes down {
+  0% { 
+    -webkit-transform: translateY(-33%); 
+            transform: translateY(-33%);
+  }
+
+  100% { 
+    -webkit-transform: translateY(0); 
+            transform: translateY(0); 
   }
 }
 
 /*для js toggle*/
 .form-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  animation-name: down;
-  animation-duration: 0.6s;
+  -webkit-animation-name: down;
+          animation-name: down;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .form-hide {
   display: none;
 }
 
-@keyframes shake {
+@-webkit-keyframes error {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -434,20 +453,49 @@ input[type="checkbox"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes error {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
 .form-error {
-  animation-name: shake;
-  animation-duration: 0.5s;
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .select-wrapper {
